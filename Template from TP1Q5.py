@@ -1,4 +1,4 @@
-#Example: $\frac{d^2x}{dt^2}=-\omega_0^2x$
+#Example: d^2x/dt^2=-omega^2x
 
 import numpy as np
 def deriv(t,y,params):  #Separate the 2nd order ODE into 2 1st order ODEs
@@ -6,7 +6,7 @@ def deriv(t,y,params):  #Separate the 2nd order ODE into 2 1st order ODEs
     omega=params
     dy[0]=y[1]  #y=dx/dt
     dy[1]=-omega**2*y[0]    #dy/dt=-omega**2x
-    return dy
+    return dy   #Here y[0]=x (so dy[0]=dx/dt) and y[1]=y (so dy[1]=dy/dt)
 
 #You don't need to touch that it's already taken care of
 #Just make sure euler.py is in the same directory as your script
