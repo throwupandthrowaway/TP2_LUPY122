@@ -1,3 +1,7 @@
+#Mahery Andriamadison
+#21304938
+#MAJ2A
+
 import numpy as np
 import matplotlib.pyplot as plt
 from rk4 import rk4
