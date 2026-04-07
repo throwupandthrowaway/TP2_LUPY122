@@ -31,7 +31,7 @@ p2=np.array((Omega,q[2]),dtype=df)[()]
 def deriv(t,y,params):
     dy=np.zeros(y.size)
     dy[0]=y[1]  #y=dtheta/dt
-    dy[1]=-params[1]**y[1]-params[0]**2*y[0]   #dy/dt=-q*u-Omega**2*theta
+    dy[1]=-params[1]*y[1]-params[0]**2*y[0]   #dy/dt=-q*u-Omega**2*theta
     return dy
 
 for i in range(n):
